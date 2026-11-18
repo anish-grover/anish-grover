@@ -98,11 +98,11 @@ Daily Pulse (3-4 min) ─┬─► 😐 Face & speech    ─┐
 | 🔎 | **TokenLens** | Nobody knows what a prompt costs until it's sent → **local-first token counter** with code-safe, meaning-preserving compression | Open-source CLI + library |
 | 🔐 | **Citadel** | Banks trust whoever holds the session → continuous **behavioural-biometric** authentication, from first keypress to logout | 🥉 3rd, Univ. of Derby |
 | 🤖 | **ProcurenAI** | RFPs eat whole afternoons → **multi-agent LLM** pipeline with semantic SKU matching | **~4 h → <5 min** |
-| ⚖️ | [**CORTEX**](https://github.com/anishgrover72-droid/cortex) | Black-box hiring is a liability → evidence-based ranking with a **plain-language reason for every decision** and a fairness self-audit | Accountable by design |
-| 🏠 | [**Real Talk AI**](https://github.com/anishgrover72-droid/real-talk-ai-site) | In real estate the first reply wins → **WhatsApp LLM agent** that qualifies and books visits in **Hindi, Punjabi & English** | Booked in **<1 min** |
+| ⚖️ | [**CORTEX**](https://github.com/anish-grover/cortex) | Black-box hiring is a liability → evidence-based ranking with a **plain-language reason for every decision** and a fairness self-audit | Accountable by design |
+| 🏠 | [**Real Talk AI**](https://github.com/anish-grover/real-talk-ai-site) | In real estate the first reply wins → **WhatsApp LLM agent** that qualifies and books visits in **Hindi, Punjabi & English** | Booked in **<1 min** |
 | 📦 | **Distribution CRM** | Sales reps work where the network doesn't → **offline-first** React Native ledger with a Node/TS + PostgreSQL sync engine | **2 h → 10 min** daily |
 | 🥤 | **CRM Automation, Pepsi India** | Manual CRM entry and reporting → an **automated pipeline** a real business team uses | In production |
-| 🛡 | [**CyberSentinel**](https://github.com/anishgrover72-droid/CyberSentinel) | Hostile traffic hides in normal traffic → ML intrusion detection and response | **92%+** accuracy |
+| 🛡 | [**CyberSentinel**](https://github.com/anish-grover/CyberSentinel) | Hostile traffic hides in normal traffic → ML intrusion detection and response | **92%+** accuracy |
 
 🔬 **Research:** a paper in progress on **battery remaining-useful-life prediction** with physics-constrained generative models.
 
@@ -215,7 +215,7 @@ Funnel analysis and client proposals. This is where I learned to sell what I bui
 ---
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=anishgrover72-droid&theme=github-dark-blue&hide_border=true&background=0d1117&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff" />
+  <img src="https://streak-stats.demolab.com?user=anish-grover&theme=github-dark-blue&hide_border=true&background=0d1117&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff" />
 </p>
 
 ---
