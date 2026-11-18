@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=17&duration=2600&pause=900&color=58A6FF&center=true&vCenter=true&width=720&height=36&lines=Agentic+AI+%C2%B7+Multi-Modal+Systems+%C2%B7+RL+for+LLMs;%232+in+India+out+of+39%2C000%2B+%C2%B7+Samsung+Solve+for+Tomorrow;Teaching+small+models+to+think+on+ONE+GPU;Pepsi+India+runs+on+a+pipeline+I+built" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=17&duration=2600&pause=900&color=58A6FF&center=true&vCenter=true&width=720&height=36&lines=Agentic+AI+%C2%B7+Multi-Modal+Systems+%C2%B7+RL+for+LLMs;%232+in+India+out+of+39%2C000%2B+%C2%B7+Samsung+Solve+for+Tomorrow;Teaching+small+models+to+think+on+ONE+GPU;Open+source+%C2%B7+mlpack+%C2%B7+PyBaMM+%C2%B7+Metaflow+%C2%B7+Kubeflow" />
 </p>
 
 ---
@@ -20,13 +20,13 @@
 
 I'm **Anish Grover**, an **electronics engineer who ended up building AI agents**. I study ECE at **Thapar Institute** (Class of 2028), and most of my time goes into one question: *what's the actual problem here, and what's the smallest system that makes it go away?*
 
-That question has taken me to stroke-recovery monitoring, hiring fairness, banking security, real-estate sales and the CRM at **Pepsi India**. I've also done **five internships** and come **2nd out of 39,000+** in Samsung Solve for Tomorrow 2026.
+That question has taken me to stroke-recovery monitoring, hiring fairness, banking security, agent payments, real-estate sales and CRM automation for **Pepsi India**. I've done **five internships**, come **2nd out of 39,000+** in Samsung Solve for Tomorrow 2026, and I contribute to open-source ML libraries like **mlpack**, **PyBaMM**, **Netflix Metaflow** and **Kubeflow**.
 
 > **Most student projects end at a demo video. Mine end with a user.**
 > I care less about the model and more about the system around it: the alerting logic, the sync layer, the edge case that breaks it at 2 AM.
 
 ```text
-🔭  Right now     →  shipping LLM features @ CogNerd · running Grovell
+🔭  Right now     →  building NeuroTrace · running Grovell · open-source PRs (mlpack, PyBaMM, Kubeflow)
 🌱  Learning      →  RL for reasoning (GRPO, RLVR) · physics-constrained models
 💬  Ask me about  →  multi-agent systems · multimodal AI · building for Bharat
 🤝  Open to       →  internships · research · hackathon teams · open source
@@ -45,7 +45,7 @@ That question has taken me to stroke-recovery monitoring, hiring fairness, banki
 </tr>
 </table>
 
-<p align="center"><sub>That's why NeuroTrace waits for two signals to agree before alerting, and why the Distribution CRM works with no internet at all.</sub></p>
+<p align="center"><sub>That's why NeuroTrace waits for a persistent change in two independent domains before alerting, and why the Distribution CRM works with no internet at all.</sub></p>
 
 ---
 
@@ -54,7 +54,7 @@ That question has taken me to stroke-recovery monitoring, hiring fairness, banki
 <table>
 <tr>
 <td align="center" width="20%"><h3>#2</h3><sub>in India · Samsung Solve for Tomorrow · 39,000+ entries</sub></td>
-<td align="center" width="20%"><h3>5</h3><sub>hackathon podiums · India, UK, International</sub></td>
+<td align="center" width="20%"><h3>7×</h3><sub>hackathon winner · India, UK, International</sub></td>
 <td align="center" width="20%"><h3>5</h3><sub>internships before 3rd year</sub></td>
 <td align="center" width="20%"><h3>~40%</h3><sub>fewer reasoning tokens with AXIOM</sub></td>
 <td align="center" width="20%"><h3>48×</h3><sub>faster RFP processing with ProcurenAI</sub></td>
@@ -65,21 +65,25 @@ That question has taken me to stroke-recovery monitoring, hiring fairness, banki
 
 ## 🧠 The one I'm proudest of: NeuroTrace
 
-### [NeuroTrace](https://frontend-iota-six-b8p5bnee1l.vercel.app): a stroke recovery monitor that lives in your phone
-🥈 **Runner-up, Samsung Solve for Tomorrow 2026: 2nd out of 39,000+ applications nationwide** · [Live site ↗](https://frontend-iota-six-b8p5bnee1l.vercel.app)
+### [NeuroTrace](https://neuro-trace-v1.vercel.app): a stroke recovery monitor that lives in your phone
+🥈 **Runner-up, Samsung Solve for Tomorrow 2026: 2nd out of 39,000+ applications nationwide** · Founder · [Live prototype ↗](https://neuro-trace-v1.vercel.app)
 
 **The problem:** after a stroke, recovery is checked in clinic visits weeks apart, and any decline between visits goes unseen.
-**My answer:** a 45-second daily check, on the phone the family already owns.
+**My answer:** a 3–4 minute daily check on the phone the family already owns, with a deeper 6–12 minute session when a clinician wants one.
 
 ```text
-45-sec phone session ─┬─► 🎙  Voice features   ─┐
-   (camera + mic)     ├─► 😐 Facial movement   ─┼─► Per-patient baseline ─► Two-modality ─► 📲 WhatsApp alert
-                      └─► ⚡ Reaction time     ─┘   (learned over 35 days)   agreement gate    to caregiver (Hindi)
+Daily Pulse (3-4 min) ─┬─► 😐 Face & speech    ─┐
+ camera · mic · touch  ├─► ✋ Finger tapping    ─┼─► Personal baseline ─► 3 safety gates ─► Caregiver & clinician
+   (all on-device)     └─► ⚡ Reaction & mood   ─┘   (14-21 days,          persistence ·      report in Hindi,
+                                                      median / MAD)        2+ domains ·       Punjabi or English
+                                                                           laterality
 ```
 
-- **Personal, not population, baselines:** every patient is compared against *their own* 35-day normal.
-- **Two signals must agree:** one noisy channel can't cry wolf, so caregivers don't learn to ignore the alerts.
-- **Built for Bharat:** no wearables and no app installs for the family. Alerts arrive **in Hindi on WhatsApp**.
+- **Personal, not population, baselines:** every patient is compared against *their own* normal, built over 14–21 days.
+- **One bad day can't cry wolf:** a change has to persist across sessions and show up in two independent domains before anyone is alerted.
+- **Privacy by architecture:** raw audio, video and images never leave the phone, and it works offline.
+- **The model explains, it never decides:** a deterministic engine makes the call; a small language model only words it.
+- **My part includes Awaaz:** an on-device Whisper speech assistant for patients with aphasia.
 
 ---
 
@@ -89,30 +93,55 @@ That question has taken me to stroke-recovery monitoring, hiring fairness, banki
 
 | | Project | The problem → what I built | Result |
 |---|---|---|---|
-| ⚡ | **AXIOM** | Frontier reasoning needs clusters → RL fine-tuning (GRPO + RLVR) with a 5-head process reward model, on **one GPU** | **~40% fewer** reasoning tokens |
+| ⚡ | [**AXIOM**](https://axiom123.vercel.app/) | Frontier reasoning needs clusters → RL fine-tuning (GRPO + RLVR) with a 5-head process reward model, on **one GPU** | **~40% fewer** reasoning tokens |
+| 💳 | **IntentProof** | AI agents can now spend money → an **MCP payment firewall** that checks every cart against the user's signed intent before PayPal sees it · *PayPal AI Hackathon* | Attack success **92.4% → 0%** on our scripted benchmark |
+| 🔎 | **TokenLens** | Nobody knows what a prompt costs until it's sent → **local-first token counter** with code-safe, meaning-preserving compression | Open-source CLI + library |
 | 🔐 | **Citadel** | Banks trust whoever holds the session → continuous **behavioural-biometric** authentication, from first keypress to logout | 🥉 3rd, Univ. of Derby |
 | 🤖 | **ProcurenAI** | RFPs eat whole afternoons → **multi-agent LLM** pipeline with semantic SKU matching | **~4 h → <5 min** |
 | ⚖️ | [**CORTEX**](https://github.com/anishgrover72-droid/cortex) | Black-box hiring is a liability → evidence-based ranking with a **plain-language reason for every decision** and a fairness self-audit | Accountable by design |
 | 🏠 | [**Real Talk AI**](https://github.com/anishgrover72-droid/real-talk-ai-site) | In real estate the first reply wins → **WhatsApp LLM agent** that qualifies and books visits in **Hindi, Punjabi & English** | Booked in **<1 min** |
 | 📦 | **Distribution CRM** | Sales reps work where the network doesn't → **offline-first** React Native ledger with a Node/TS + PostgreSQL sync engine | **2 h → 10 min** daily |
-| 🥤 | **CRM Automation, Pepsi India** | Manual CRM entry and reporting → an **automated pipeline** a real business team depends on | In production |
+| 🥤 | **CRM Automation, Pepsi India** | Manual CRM entry and reporting → an **automated pipeline** a real business team uses | In production |
 | 🛡 | [**CyberSentinel**](https://github.com/anishgrover72-droid/CyberSentinel) | Hostile traffic hides in normal traffic → ML intrusion detection and response | **92%+** accuracy |
 
 🔬 **Research:** a paper in progress on **battery remaining-useful-life prediction** with physics-constrained generative models.
 
 ---
 
+## 🌍 Open source
+
+I fix real bugs in ML libraries people depend on.
+
+| Project | What I've contributed | Status |
+|---|---|---|
+| **mlpack** (C++) | Fixed heap-buffer-overflow reads in the ARFF loader on malformed headers | ✅ Merged |
+| **PyBaMM** | Fixed swapped names in the diffusivity deprecation warning; logging and docs fixes | ✅ Merged · more in review |
+| **Netflix Metaflow** | Runtime fixes: non-blocking task-log reads, bounded metadata requests, macOS kqueue timeout | In review |
+| **Kubeflow** (Katib, Kale) | Early-stopping status-patch race; comprehension locals in pipeline marshalling | In review |
+| **aeon** | numba float32 TypingError in DTW distances; class-tag caching | In review |
+
+---
+
 ## 💼 Where I've worked
 
-**🧠 AI/ML Intern · CogNerd** · *2026 - Present*<br>
-I ship features in the production Python codebase, from requirements through review and release. Right now I'm building **Content Studio**, an LLM-assisted content generation and search-visibility feature, and tuning it against live client feedback.
+**🧠 Founder · NeuroTrace** · *Sep 2026 - Present*<br>
+Building the stroke-recovery monitor above with a cross-functional team and two neurosurgeon advisors.
 
-**🚀 Founder's Office Intern · Welzin AI** · *2025 - Present*<br>
+**🏗 Founder · [Grovell](https://grovell-website.vercel.app)** · *Present*<br>
+My software and AI automation studio, building ERP, inventory and workflow systems for manufacturers, distributors and SMEs in India and abroad.
+
+**🤖 AI/ML Intern · CogNerd** · *May - Jul 2026*<br>
+Shipped features in the production Python codebase, from requirements through review and release. Built **Content Studio**, an LLM-assisted content generation and search-visibility feature, tuned against live client feedback.
+
+**🚀 Founder's Office Intern · Welzin AI** · *Mar - Apr 2026*<br>
 Tech and strategy support at an early-stage AI startup: competitor analysis of AI products, KPI tracking and process docs.
 
 <details>
-<summary><b>Earlier internships</b> (click to expand)</summary>
+<summary><b>Earlier roles</b> (click to expand)</summary>
 <br>
+
+**📦 B2B Sales & Data Insights Lead · Leorit India** · *Oct - Dec 2025*<br>
+Owned pricing, sales and operational analytics for 2,000+ B2B orders; dashboards improved margin predictability by **~35%**.
 
 **📈 BD & Data Intern · HITGOC** · *Aug - Oct 2025*<br>
 Built ML lead-quality scoring models and SQL-backed dashboards that told sales who to call first.
@@ -142,9 +171,8 @@ Funnel analysis and client proposals. This is where I learned to sell what I bui
 
 ## 🌱 Beyond code
 
-- 🏗 **Founder, [Grovell](https://grovell-website.vercel.app):** my software and AI automation studio, building ERP, inventory and workflow systems for manufacturers, distributors and SMEs in India and abroad.
 - 👥 **Founder, CollabSphere:** I put together a student dev team that delivered **₹90,000** in paid client projects.
-- 🚀 **Ambassador, Innovation Mission Punjab** · 📋 **McKinsey Forward Program**
+- 🚀 **Ambassador, Innovation Mission Punjab** · 🎓 **Campus Ambassador, GeeksforGeeks** · 📋 **McKinsey Forward Program**
 
 ---
 
@@ -152,8 +180,10 @@ Funnel analysis and client proposals. This is where I learned to sell what I bui
 
 <p>
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white" />
 <img src="https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white" />
 <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" />
+<img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white" />
 <img src="https://img.shields.io/badge/HuggingFace-FFD21F?style=flat-square&logo=huggingface&logoColor=black" />
 <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" />
 <img src="https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white" />
@@ -167,9 +197,9 @@ Funnel analysis and client proposals. This is where I learned to sell what I bui
 
 | Area | Tools |
 |---|---|
-| **Languages** | Python · SQL · JavaScript / TypeScript |
-| **AI / ML** | LLMs · RL (GRPO / RLVR) · process reward models · multi-agent systems · RAG · embeddings & vector search (FAISS) · multimodal models · PyTorch · HuggingFace Transformers |
-| **Backend & Infra** | FastAPI · Node.js / TypeScript · PostgreSQL · REST APIs · Docker · Git · Vercel |
+| **Languages** | Python · C++ · SQL · JavaScript / TypeScript |
+| **AI / ML** | LLMs · RL (GRPO / RLVR) · process reward models · QLoRA / PEFT · vLLM · TRL · multi-agent systems · MCP · RAG · hybrid retrieval (FAISS + BM25) · multimodal models (MediaPipe, Whisper, ViT) · PyTorch · TensorFlow · HuggingFace Transformers |
+| **Backend & Infra** | FastAPI · Flask · Node.js / TypeScript · PostgreSQL · REST APIs · Docker · Git · CI · Vercel · Railway |
 | **Frontend & Mobile** | React · React Native · offline-first data sync |
 | **Data** | SQL analytics · ETL & report automation · KPI dashboards · ML lead scoring |
 
